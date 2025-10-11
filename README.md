@@ -18,3 +18,14 @@
 4. **Bill statement amounts** (BILL_AMT1 to BILL_AMT6).
 5. **Previous payment amounts** (PAY_AMT1 to PAY_AMT6).
 - **Initial Data Quality Check**: The data.info() and data.shape commands are used to get an overview of data types, non-null counts, and the dimensions of the dataset.
+#### I have performed the following steps for data understanding:
+- **Load the data**: Read the UCI_Credit_Card.csv file into a pandas DataFrame.
+- **Initial Exploration**: Examine the first few rows, column names, and data types.
+- **Descriptive Statistics**: Generate summary statistics for numerical columns to understand their distribution (e.g., mean, median, min, max).
+- **Meaningful names** for columns
+- **Missing Values**: Check for missing values in each column to identify data quality issues.
+- **Target Variable Analysis**: Analyze the distribution of the 'default.payment.next.month' column to spot outliers or skewness.
+- **Feature Analysis**:
+1. **For categorical features**, I'll examine the unique values and their frequencies.
+2. **For numerical features**, I'll look at their distributions using histograms.
+- **Correlation Analysis**: Investigate relationships between features and the target variable, 'default.payment.next.month'.
