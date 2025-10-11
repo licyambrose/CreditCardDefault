@@ -18,6 +18,7 @@
 4. **Bill statement amounts** (BILL_AMT1 to BILL_AMT6).
 5. **Previous payment amounts** (PAY_AMT1 to PAY_AMT6).
 - **Initial Data Quality Check**: The data.info() and data.shape commands are used to get an overview of data types, non-null counts, and the dimensions of the dataset.
+
 #### I have performed the following steps for data understanding:
 - **Load the data**: Read the UCI_Credit_Card.csv file into a pandas DataFrame.
 - **Initial Exploration**: Examine the first few rows, column names, and data types.
