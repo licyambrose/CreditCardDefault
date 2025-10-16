@@ -86,10 +86,10 @@ To understand the dataset, I would take the following steps:
 
 ### Data preparation
 After our initial exploration and fine-tuning of the business understanding, it is time to construct our final dataset prior to modeling. Here, we want to make sure to handle any integrity issues and cleaning, the engineering of new features, any transformations that we believe should happen (scaling, logarithms, normalization, etc.), and general preparation for modeling with sklearn.
-- Drop ID column as it is not needed for prediction.
-- For Education, 1=graduate school, 2=university, 3=high school, 4=others. Values 0, 5, and 6 are not documented and can be grouped into 'others' (4).
-- For Marital Status, 1=married, 2=single, 3=others. The value 0 is not documented and can be grouped into 'others' (3).
-- Rename the column titles for readability
-- Verify the unique values after cleaning.
-- Save the cleaned data to a new CSV file(credit_card_cleaned.csv).
-- Load the cleaned data to verify null values, number of columns and rows.
+- **Drop ID column** as it is not needed for prediction.
+- For Education, **1=graduate school**, **2=university**, **3=high school**, **4=others**. Values **0, 5, and 6 are not documented** and can be **grouped into 'others' (4)**.
+- For Marital Status, **1=married**, **2=single**, **3=others**. The value **0 is not documented** and can be **grouped into 'others' (3)**.
+- **Rename the column titles** for readability
+- **Verify the unique values** after cleaning.
+- **Save the cleaned data to a new CSV** file(credit_card_cleaned.csv).
+- Load the cleaned data to **verify null values, number of columns and rows**.
