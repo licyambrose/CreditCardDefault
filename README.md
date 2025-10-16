@@ -148,3 +148,19 @@ These insights are crucial for feature engineering and for understanding the fin
 | Feature Set  | Tuning   | Ensemble   | Class Weighting | Model               | precision | Recall | F1-score | Training accuracy | Testing accuracy |
 |--------------|----------|------------|-------------|---------------------|--------|--------|--------|-----------|--------|
 | **All Features** | **NONE**     | **NONE**   | **Balanced**    | **Support Vector Machine** |**0.494997**|**0.559156**|**0.525124**|**0.789208**|**0.776333**|
+
+![img_10.png](img_10.png)
+
+### 5. Evaluation
+
+- The trained model is evaluated to assess its performance based on the business objective.
+
+- **Metrics**: The evaluation focuses on metrics such as precision, recall, and F1-score, which are especially important for imbalanced datasets. Accuracy is also measured for both training and testing datasets.
+
+- **Final Decision**: The evaluation results show that a balanced SVM model achieves a precision of 0.495, a recall of 0.559, and an F1-score of 0.525, making it the final selected model.
+
+- **The most influential features** in predicting credit card default are related to the **repayment status in recent months**.
+
+- **Most Important Features**: The **top three most important features** are the client's repayment status in **September (Repayment_Status_Sept), August (Repayment_Status_Aug), and June (Repayment_Status_Jun)**. This indicates that recent payment behavior is the **most critical factor for the model's decision-making**.
+
+- **Least Important Features**: The features with the least influence on the model's predictions include **Previous_Payment_Aug, Bill_Amount_Apr, and Gender**. The importance scores for these **features are very close to zero**, suggesting they do not significantly impact the model's ability to predict default.
