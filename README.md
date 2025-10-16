@@ -43,7 +43,7 @@ After our initial exploration and fine-tuning of the business understanding, it 
 1. **For categorical features**, I'll examine the unique values and their frequencies.
 2. **For numerical features**, I'll look at their distributions using histograms.
 
-![img.png](img.png)
+![images/img.png](img.png)
 
 #### Exploratory Data Analysis (EDA)
 ##### Summary of Bar Plots
@@ -63,15 +63,15 @@ The bar plots reveal several key trends about the factors influencing credit car
 - **Previous Payments**: Similar to credit limit, there's a noticeable trend here. Clients who make smaller previous payments (relative to their bill amount) tend to have a higher default rate.
 
 These insights are crucial for feature engineering and for understanding the final model's behavior. The repayment status, in particular, stands out as a dominant feature.
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
-![img_3.png](img_3.png)
-![img_4.png](img_4.png)
-![img_5.png](img_5.png)
-![img_6.png](img_6.png)
-![img_7.png](img_7.png)
-![img_8.png](img_8.png)
-![img_9.png](img_9.png)
+![images/img_1.png](img_1.png)
+![images/img_2.png](img_2.png)
+![images/img_3.png](img_3.png)
+![images/img_4.png](img_4.png)
+![images/img_5.png](img_5.png)
+![images/img_6.png](img_6.png)
+![images/img_7.png](img_7.png)
+![images/img_8.png](img_8.png)
+![images/img_9.png](img_9.png)
 
 ### 4. Modeling
 #### Modeling approaches
@@ -149,7 +149,7 @@ These insights are crucial for feature engineering and for understanding the fin
 |--------------|----------|------------|-------------|---------------------|--------|--------|--------|-----------|--------|
 | **All Features** | **NONE**     | **NONE**   | **Balanced**    | **Support Vector Machine** |**0.494997**|**0.559156**|**0.525124**|**0.789208**|**0.776333**|
 
-![img_10.png](img_10.png)
+![images/img_10.png](img_10.png)
 
 ### 5. Evaluation
 
