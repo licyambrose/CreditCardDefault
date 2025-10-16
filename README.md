@@ -75,7 +75,7 @@ These insights are crucial for feature engineering and for understanding the fin
 
 ### 4. Modeling
 #### Modeling approaches
-**Use all 24 features for the prediction**
+- **Use all 24 features for the prediction**
 
 1. **Models to be used**
 - Logistic Regression
