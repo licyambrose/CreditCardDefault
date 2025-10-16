@@ -153,10 +153,11 @@ These insights are crucial for feature engineering and for understanding the fin
 
 ### 5. Evaluation
 
+Balanced SVM model has been selected as the final model based on its performance across multiple metrics, particularly F1-score and recall, which are crucial for this imbalanced classification problem.
 
-| Feature Set  | Tuning   | Ensemble   | Class Weighting | Model               | precision | Recall | F1-score | Training accuracy | Testing accuracy |
-|--------------|----------|------------|-------------|---------------------|--------|--------|--------|-----------|--------|
-| **All Features** | **NONE**     | **NONE**   | **Balanced**    | **Support Vector Machine** |**0.494997**|**0.559156**|**0.525124**|**0.789208**|**0.776333**|
+ | precision | Recall | F1-score | Training accuracy | Testing accuracy |
+|--------|--------|--------|-----------|--------|
+|**0.494997**|**0.559156**|**0.525124**|**0.789208**|**0.776333**|
 
 
 - The trained model is evaluated to assess its performance based on the business objective (**_To predict the likelihood of a credit card client defaulting on their next month's payment_**).
