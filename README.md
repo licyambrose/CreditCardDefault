@@ -175,3 +175,9 @@ These insights are crucial for feature engineering and for understanding the fin
 ### 6. Deployment
 
 - svm_pipeline.pkl - This file contains the trained SVM model pipeline, which includes all preprocessing steps and the final model. It can be used to make predictions on new data.
+
+### Links
+- **Data source**: https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset/data
+- **Problem Statement**: https://github.com/licyambrose/CreditCardDefault/blob/main/PROBLEM_STATEMENT.md
+- **CRISP-DM methodology for this project**: https://github.com/licyambrose/CreditCardDefault/blob/main/README.md
+- **Notebook**: https://github.com/licyambrose/CreditCardDefault/blob/main/creditcarddefault.ipynb
