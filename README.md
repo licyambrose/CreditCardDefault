@@ -95,3 +95,52 @@ These insights are crucial for feature engineering and for understanding the fin
 - Applying class_weight='balanced'
 - Applying class_weight='balanced' along with other configs for the model
 - Ensemble methods for better prediction reducing bias and reduce variance (Bagging - High Variance - choose Random Forest, High bias - Boosting - choose AdaBoost/GradientBooster trees)
+
+#### Overall model comparison Summary
+
+| Feature Set  | Tuning   | Ensemble   | Class Weighting | Model               | precision | Recall | F1-score | Training accuracy | Testing accuracy |
+|--------------|----------|------------|-------------|---------------------|--------|--------|--------|-----------|--------|
+| All Features | NONE     | NONE       | NONE        | Logistic Regression | 0.690323   | 0.241899 | 0.358259 |  0.811833 | 0.808333 |
+| All Features | NONE     | NONE       | NONE        | K-Nearest Neighbors | 0.547368   | 0.352675 | 0.428964 |  0.840958 | 0.792333 |
+| All Features | NONE     | NONE   | NONE        | Decision Tree       | 0.370779   | 0.405426 | 0.387329 |  0.999458 | 0.716333 |
+| All Features | NONE     | NONE   | NONE        | Support Vector Machine | 0.666172   | 0.338357 | 0.448776 | 0.825208 | 0.816167 |
+| All Features | GridSearchCV | NONE   | NONE        | Logistic Regression | 0.686567   |0.242653|0.358575|0.811833|0.808000|
+| All Features | GridSearchCV | NONE   | NONE        | K-Nearest Neighbors | 0.579618   |0.342879|0.430871|0.834042|0.799667|
+| All Features | GridSearchCV | NONE   | NONE        | Decision Tree       | 0.621693   |0.354182|0.451272|0.844833|0.809500|
+| All Features | GridSearchCV | NONE   | NONE        | Support Vector Machine | 0.661120   |0.329314|0.439638|0.834458|0.814333|
+| All Features | RandomizedSearchCV | NONE   | NONE        | Logistic Regression | 0.686567   |0.242653|0.358575|0.811833|0.808000|
+| All Features | RandomizedSearchCV | NONE   | NONE        | K-Nearest Neighbors | 0.571608   |0.342879|0.428639|0.834250|0.797833|
+| All Features | RandomizedSearchCV | NONE   | NONE        | Decision Tree       | 0.627346   |0.352675|0.451520|0.843458|0.810500|
+| All Features | RandomizedSearchCV | NONE   | NONE        | Support Vector Machine | 0.661120   |0.329314|0.439638|0.834458|0.814333|
+| All Features | NONE     | NONE       | Balanced    | Logistic Regression |0.367083|0.620196|0.461194|0.694042|0.679500|
+| All Features | NONE     | NONE       | Balanced    | K-Nearest Neighbors |0.547368|0.352675|0.428964|0.840958|0.792333|
+| All Features | NONE     | NONE   | NONE        | Decision Tree       |0.386086|0.380558|0.383302|0.999375|0.729167|
+| **All Features** | **NONE**     | **NONE**   | **Balanced**    | **Support Vector Machine** |**0.494997**|**0.559156**|**0.525124**|**0.789208**|**0.776333**|
+| All Features | NONE     | NONE       | Balanced +  | Logistic Regression |0.367083|0.620196|0.461194|0.693958|0.679500|
+| All Features | NONE     | NONE       | Balanced +  | K-Nearest Neighbors |0.547368|0.352675|0.428964|0.840958|0.792333|
+| All Features | NONE     | NONE   | NONE        | Decision Tree       |0.386086|0.380558|0.383302|0.999375|0.729167|
+| All Features | NONE     | NONE   | Balanced +  | Support Vector Machine |0.467347|0.517709|0.491241|0.770083|0.762833|
+| All Features | NONE     | AdaBoost | NONE        | Logistic Regression |0.771429|0.040693|0.077309| 0.782042  |0.785167|
+| **All Features** | **NONE**     | **AdaBoost** | **NONE**        | **Decision Tree**                |**0.669151**|**0.338357**|**0.449449**| **0.820458**  |**0.816667**|
+| **All Features** | **NONE**     | **GradientBoostTrees** | **NONE**        | **Decision Tree**                |**0.610697**|**0.370008**|**0.460817**|**0.84575**|**0.8085**|
+
+
+- **Best by F1-score and recall**
+| Feature Set  | Tuning   | Ensemble   | Class Weighting | Model               | precision | Recall | F1-score | Training accuracy | Testing accuracy |
+|--------------|----------|------------|-------------|---------------------|--------|--------|--------|-----------|--------|
+| **All Features** | **NONE**     | **NONE**   | **Balanced**    | **Support Vector Machine** |**0.494997**|**0.559156**|**0.525124**|**0.789208**|**0.776333**|
+
+- **Best by testing accuracy. If we want slightly higher testing accuracy**
+| Feature Set  | Tuning   | Ensemble   | Class Weighting | Model               | precision | Recall | F1-score | Training accuracy | Testing accuracy |
+|--------------|----------|------------|-------------|---------------------|--------|--------|--------|-----------|--------|
+| **All Features** | **NONE**     | **AdaBoost** | **NONE**        | **Decision Tree**                |**0.669151**|**0.338357**|**0.449449**| **0.820458**  |**0.816667**|
+
+- **Best by recall. If we prioritize F1-score and balanced performance**
+| Feature Set  | Tuning   | Ensemble   | Class Weighting | Model               | precision | Recall | F1-score | Training accuracy | Testing accuracy |
+|--------------|----------|------------|-------------|---------------------|--------|--------|--------|-----------|--------|
+| **All Features** | **NONE**     | **GradientBoostTrees** | **NONE**        | **Decision Tree**                |**0.610697**|**0.370008**|**0.460817**|**0.84575**|**0.8085**|
+
+- **Final Decision - Going with Balanced SVM**
+| Feature Set  | Tuning   | Ensemble   | Class Weighting | Model               | precision | Recall | F1-score | Training accuracy | Testing accuracy |
+|--------------|----------|------------|-------------|---------------------|--------|--------|--------|-----------|--------|
+| **All Features** | **NONE**     | **NONE**   | **Balanced**    | **Support Vector Machine** |**0.494997**|**0.559156**|**0.525124**|**0.789208**|**0.776333**|
