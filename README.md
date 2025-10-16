@@ -77,20 +77,20 @@ These insights are crucial for feature engineering and for understanding the fin
 #### Modeling approaches
 **Use all 24 features for the prediction**
 
-1. Models to be used
+1. **Models to be used**
 - Logistic Regression
 - K-Nearest Neighbors
 - Decision Tree
 - Support Vector Machine
 
-2. Model will be evaluated based on the below factors
+2. **Model will be evaluated based on the below factors**
 - Precision
 - Recall
 - F1 Score
 - Accuracy
 - Confusion matrix - Minimizing False Positives and False Negatives
 
-3. If the above factors are not satisfied improve the model with the below technics
+3. **If the above factors are not satisfied improve the model with the below technics**
 - Hyper parameter tuning with GridSearchCV and RandomizedSearchCV will be performed
 - Applying class_weight='balanced'
 - Applying class_weight='balanced' along with other configs for the model
