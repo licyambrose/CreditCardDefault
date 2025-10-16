@@ -46,6 +46,23 @@ After our initial exploration and fine-tuning of the business understanding, it 
 ![img.png](img.png)
 
 #### Exploratory Data Analysis (EDA)
+##### Summary of Bar Plots
+
+The bar plots reveal several key trends about the factors influencing credit card defaults:
+
+##### Categorical Features:
+- **Repayment Status**: This is clearly the most significant predictor. The default rate rises sharply as the payment delay increases from one month to two or more. Clients who pay in full or have no consumption have a very low risk of default.
+- **Gender**: There is a slight difference in default rates between genders, with one gender showing a marginally higher tendency to default.
+- **Education**: Default rates vary across education levels. Typically, higher levels of education (like graduate school) are associated with a lower default rate compared to lower levels (like high school).
+- **Marital Status**: The default rate differs between married and single clients, with one group showing a slightly higher propensity to default.
+
+##### Numerical Features (Binned):
+- **Credit Limit**: There is a strong inverse relationship. Clients in the lowest credit limit bracket have the highest default rate, and the rate consistently decreases as the credit limit increases.
+- **Age**: The default rate shows some variation across different age groups. It is often observed that younger clients might have a slightly higher default rate.
+- **Bill Amounts**: The trend for bill amounts is not always linear. However, it can sometimes be seen that clients with very low or very high bill amounts relative to their credit limit have different default behaviors.
+- **Previous Payments**: Similar to credit limit, there's a noticeable trend here. Clients who make smaller previous payments (relative to their bill amount) tend to have a higher default rate.
+
+These insights are crucial for feature engineering and for understanding the final model's behavior. The repayment status, in particular, stands out as a dominant feature.
 ![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
 ![img_3.png](img_3.png)
