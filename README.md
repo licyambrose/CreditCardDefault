@@ -43,7 +43,7 @@ After our initial exploration and fine-tuning of the business understanding, it 
 1. **For categorical features**, I'll examine the unique values and their frequencies.
 2. **For numerical features**, I'll look at their distributions using histograms.
 
-![images/img.png](img.png)
+![images/img.png](images/img.png)
 
 #### Exploratory Data Analysis (EDA)
 ##### Summary of Bar Plots
