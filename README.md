@@ -153,7 +153,7 @@ These insights are crucial for feature engineering and for understanding the fin
 
 ### 5. Evaluation
 
-- The trained model is evaluated to assess its performance based on the business objective.
+- The trained model is evaluated to assess its performance based on the business objective (**_To predict the likelihood of a credit card client defaulting on their next month's payment_**).
 
 - **Metrics**: The evaluation focuses on metrics such as precision, recall, and F1-score, which are especially important for imbalanced datasets. Accuracy is also measured for both training and testing datasets.
 
