@@ -63,11 +63,11 @@ The bar plots reveal several key trends about the factors influencing credit car
 - **Previous Payments**: Similar to credit limit, there's a noticeable trend here. Clients who make smaller previous payments (relative to their bill amount) tend to have a higher default rate.
 
 These insights are crucial for feature engineering and for understanding the final model's behavior. The repayment status, in particular, stands out as a dominant feature.
-![img_0.png](img_0.png)
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
-![img_3.png](img_3.png)
-![img_4.png](img_4.png)
+![images/img_0.png](images/img_0.png)
+![images/img_1.png](images/img_1.png)
+![images/img_2.png](images/img_2.png)
+![images/img_3.png](images/img_3.png)
+![images/img_4.png](images/img_4.png)
 
 ### 4. Modeling
 #### Modeling approaches
