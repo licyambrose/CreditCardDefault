@@ -157,7 +157,7 @@ These insights are crucial for feature engineering and for understanding the fin
 
 - **Metrics**: The evaluation focuses on metrics such as precision, recall, and F1-score, which are especially important for imbalanced datasets. Accuracy is also measured for both training and testing datasets.
 
-- **Final Decision**: The evaluation results show that a balanced SVM model achieves a precision of 0.495, a recall of 0.559, and an F1-score of 0.525, making it the final selected model.
+- **Final Decision**: The evaluation results show that a **balanced SVM model** achieves a **precision of 0.495**, a **recall of 0.559**, and an **F1-score of 0.525**, making it the final selected model.
 
 - **The most influential features** in predicting credit card default are related to the **repayment status in recent months**.
 
