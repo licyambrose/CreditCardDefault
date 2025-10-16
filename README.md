@@ -164,3 +164,7 @@ These insights are crucial for feature engineering and for understanding the fin
 - **Most Important Features**: The **top three most important features** are the client's repayment status in **September (Repayment_Status_Sept), August (Repayment_Status_Aug), and June (Repayment_Status_Jun)**. This indicates that recent payment behavior is the **most critical factor for the model's decision-making**.
 
 - **Least Important Features**: The features with the least influence on the model's predictions include **Previous_Payment_Aug, Bill_Amount_Apr, and Gender**. The importance scores for these **features are very close to zero**, suggesting they do not significantly impact the model's ability to predict default.
+
+### 6. Deployment
+
+- svm_pipeline.pkl - This file contains the trained SVM model pipeline, which includes all preprocessing steps and the final model. It can be used to make predictions on new data.
