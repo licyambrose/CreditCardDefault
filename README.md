@@ -153,7 +153,7 @@ These insights are crucial for feature engineering and for understanding the fin
 
 ### 5. Evaluation
 
-Balanced SVM model has been selected as the final model based on its performance across multiple metrics, particularly F1-score and recall, which are crucial for this imbalanced classification problem.
+**Balanced SVM model has been selected as the final model based on its performance** across multiple metrics, particularly F1-score and recall, which are crucial for this imbalanced classification problem.
 
  | precision | Recall | F1-score | Training accuracy | Testing accuracy |
 |--------|--------|--------|-----------|--------|
