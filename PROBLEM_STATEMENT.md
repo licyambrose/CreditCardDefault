@@ -28,7 +28,7 @@ The target variable is "**default.payment.next.month**", which indicates whether
 ##### Output
 Calibrated probability of default within the next month per client.
 
-# Data understanding
+#### Data understanding
 To understand the dataset, I would take the following steps:
 
 - **Load the data**: Read the UCI_Credit_Card.csv file into a pandas DataFrame.
