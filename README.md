@@ -72,3 +72,26 @@ These insights are crucial for feature engineering and for understanding the fin
 ![img_7.png](img_7.png)
 ![img_8.png](img_8.png)
 ![img_9.png](img_9.png)
+
+### 4. Modeling
+#### Modeling approaches
+**Use all 24 features for the prediction**
+
+1. Models to be used
+- Logistic Regression
+- K-Nearest Neighbors
+- Decision Tree
+- Support Vector Machine
+
+2. Model will be evaluated based on the below factors
+- Precision
+- Recall
+- F1 Score
+- Accuracy
+- Confusion matrix - Minimizing False Positives and False Negatives
+
+3. If the above factors are not satisfied improve the model with the below technics
+- Hyper parameter tuning with GridSearchCV and RandomizedSearchCV will be performed
+- Applying class_weight='balanced'
+- Applying class_weight='balanced' along with other configs for the model
+- Ensemble methods for better prediction reducing bias and reduce variance (Bagging - High Variance - choose Random Forest, High bias - Boosting - choose AdaBoost/GradientBooster trees)
