@@ -91,7 +91,7 @@ These insights are crucial for feature engineering and for understanding the fin
 - Confusion matrix - Minimizing False Positives and False Negatives
 
 3. **If the above factors are not satisfied improve the model with the below technics**
-- Hyper parameter tuning with GridSearchCV and RandomizedSearchCV will be performed
+- Hyper parameter tuning with GridSearchCV and RandomizedSearchCV will be performed. Here we will use best parameters for the model
 - Applying class_weight='balanced'
 - Applying class_weight='balanced' along with other configs for the model
 - Ensemble methods for better prediction reducing bias and reduce variance (Bagging - High Variance - choose Random Forest, High bias - Boosting - choose AdaBoost/GradientBooster trees)
