@@ -3,6 +3,48 @@
 #### Dataset source: https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset/data
 
 ### Problem statement
+1. Research Question
+The research question is: Can a model accurately estimate the probability of a credit card client defaulting on their payment in the next month?
+
+2. Expected Data Source(s)
+The data source for this project is a public dataset from the UCI Machine Learning Repository, available on Kaggle: Default of Credit Card Clients Dataset Links to an external site.. It includes data from 30,000 credit card clients in Taiwan.
+https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset/data
+
+3. Analysis Techniques
+Since this is classification problem below are the approaches I plan to take for credit card default prediction
+
+- Use all 24 features for the prediction
+
+**Models to be used**
+- Logistic Regression
+- K-Nearest Neighbors
+- Decision Tree
+- Support Vector Machine
+
+**Model will be evaluated based on the below factors**
+- Precision
+- Recall
+- F1 Score
+- Accuracy
+- Confusion matrix - Minimizing False Positives and False Negatives
+
+**If the above factors are not satisfied improve the model with the below technics**
+- Hyper parameter tuning with GridSearchCV and RandomizedSearchCV will be performed
+- Applying class_weight='balanced'
+- Applying class_weight='balanced' along with other configs for the model
+- Ensemble methods for better prediction reducing bias and reduce variance (Bagging - High Variance - choose Random Forest, High bias - Boosting - choose AdaBoost/GradientBooster trees)
+
+**Expected Results**
+The final selected model will be selected based on the following performance metrics:
+
+- Precision score 
+- Recall
+- F1-score
+- Training and testing accuracy
+
+**Importance of the Question**
+Answering this question is critical because it directly supports a bank's risk management efforts. By predicting the likelihood of default, the model provides valuable insights that enable risk teams to proactively make data-driven decisions. These decisions, such as adjusting credit limits, prioritizing collections, or setting up monitoring strategies, can help reduce financial losses and minimize risk for the institution.
+
 #### Business Objective
 Estimate the probability that a credit card client will default on their payment in the next month, enabling risk teams to make decisions such as adjusting credit limits, prioritizing collections, or setting monitoring strategies to reduce expected loss.
 
