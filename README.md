@@ -126,21 +126,25 @@ These insights are crucial for feature engineering and for understanding the fin
 
 
 - **Best by F1-score and recall**
+
 | Feature Set  | Tuning   | Ensemble   | Class Weighting | Model               | precision | Recall | F1-score | Training accuracy | Testing accuracy |
 |--------------|----------|------------|-------------|---------------------|--------|--------|--------|-----------|--------|
 | **All Features** | **NONE**     | **NONE**   | **Balanced**    | **Support Vector Machine** |**0.494997**|**0.559156**|**0.525124**|**0.789208**|**0.776333**|
 
 - **Best by testing accuracy. If we want slightly higher testing accuracy**
+
 | Feature Set  | Tuning   | Ensemble   | Class Weighting | Model               | precision | Recall | F1-score | Training accuracy | Testing accuracy |
 |--------------|----------|------------|-------------|---------------------|--------|--------|--------|-----------|--------|
 | **All Features** | **NONE**     | **AdaBoost** | **NONE**        | **Decision Tree**                |**0.669151**|**0.338357**|**0.449449**| **0.820458**  |**0.816667**|
 
 - **Best by recall. If we prioritize F1-score and balanced performance**
+
 | Feature Set  | Tuning   | Ensemble   | Class Weighting | Model               | precision | Recall | F1-score | Training accuracy | Testing accuracy |
 |--------------|----------|------------|-------------|---------------------|--------|--------|--------|-----------|--------|
 | **All Features** | **NONE**     | **GradientBoostTrees** | **NONE**        | **Decision Tree**                |**0.610697**|**0.370008**|**0.460817**|**0.84575**|**0.8085**|
 
 - **Final Decision - Going with Balanced SVM**
+
 | Feature Set  | Tuning   | Ensemble   | Class Weighting | Model               | precision | Recall | F1-score | Training accuracy | Testing accuracy |
 |--------------|----------|------------|-------------|---------------------|--------|--------|--------|-----------|--------|
 | **All Features** | **NONE**     | **NONE**   | **Balanced**    | **Support Vector Machine** |**0.494997**|**0.559156**|**0.525124**|**0.789208**|**0.776333**|
